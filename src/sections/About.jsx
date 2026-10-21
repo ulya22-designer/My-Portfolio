@@ -10,8 +10,7 @@ import {
 export default function About() {
   return (
     <section id="about" className="relative bg-[#E8E5E5] pt-16 pb-24">
-      
-      {/* TOP WAVE (Fix garis putih dengan top-[1px] dan z-10) */}
+    
       <div className="absolute top-[1px] left-0 w-full overflow-hidden leading-none -translate-y-full z-10">
         <svg
           viewBox="0 0 1440 140"
@@ -25,7 +24,6 @@ export default function About() {
         </svg>
       </div>
 
-      {/* INJECT CUSTOM CSS UNTUK ANIMASI BUBBLE */}
       <style>
         {`
           @keyframes float-slow {
@@ -46,10 +44,8 @@ export default function About() {
         `}
       </style>
 
-      {/* CONTAINER UTAMA */}
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         
-        {/* ================= LEFT SECTION (TEXT & BUTTONS) ================= */}
         <div className="relative z-20">
           {/* Badge */}
           <span className="group inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#2F496E]/10 border border-[#2F496E]/20 text-[#2F496E] font-semibold transition-all duration-300 hover:bg-[#2F496E]/20 hover:shadow-sm cursor-default">
@@ -78,7 +74,6 @@ export default function About() {
             innovative technological solutions.
           </p>
 
-          {/* BUTTONS */}
           <div className="mt-10 flex flex-wrap gap-5">
             {/* Download CV */}
             <a
@@ -108,32 +103,24 @@ export default function About() {
           </div>
         </div>
 
-        {/* ================= RIGHT SECTION (IMAGE & ORNAMENTS) ================= */}
+        {/* RIGHT SECTION (IMAGE & ORNAMENTS) */}
         <div className="relative flex justify-center items-center min-h-[650px]">
 
-          {/* --- BACKGROUND GLOWS (Semua di belakang: -z-10) --- */}
+    
           <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-br from-[#2F496E]/20 to-[#3F5F8C]/10 blur-[100px] -z-10 animate-pulse"></div>
           <div className="absolute top-10 right-10 w-[300px] h-[300px] rounded-full bg-[#5C7BA5]/20 blur-[80px] -z-10"></div>
           <div className="absolute bottom-10 left-10 w-[250px] h-[250px] rounded-full bg-[#2F496E]/15 blur-[70px] -z-10"></div>
 
-          {/* --- FLOATING GLASS BUBBLES (Semua di belakang foto: z-0) --- */}
-          
-          {/* Bubble Besar Kanan Atas */}
           <div className="absolute top-12 right-4 w-[160px] h-[160px] rounded-full bg-white/20 backdrop-blur-xl border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)] z-0 animate-float-slow transition-transform duration-500"></div>
 
-          {/* Bubble Sedang Kiri Bawah */}
           <div className="absolute bottom-16 -left-8 w-[130px] h-[130px] rounded-full bg-gradient-to-tr from-[#2F496E]/20 to-white/10 backdrop-blur-lg border border-white/30 shadow-xl z-0 animate-float-medium"></div>
 
-          {/* Bubble Kecil Kanan Bawah */}
           <div className="absolute bottom-24 right-12 w-[80px] h-[80px] rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg z-0 animate-float-fast"></div>
 
-          {/* Accent Dots (Solid/Semi-solid) */}
           <div className="absolute top-32 left-12 w-10 h-10 rounded-full bg-gradient-to-br from-[#2F496E]/40 to-[#2F496E]/10 backdrop-blur-sm z-0 animate-float-medium" style={{ animationDelay: '1s' }}></div>
           <div className="absolute bottom-40 right-2 w-6 h-6 rounded-full bg-[#3F5F8C]/40 z-0 animate-float-slow" style={{ animationDelay: '2s' }}></div>
 
-          {/* --- MAIN PHOTO (Layer paling depan: z-10) --- */}
           <div className="relative z-10 group">
-            {/* Bayangan presisi yang mengikuti bentuk gambar */}
             <div className="absolute inset-0 bg-[#2F496E]/10 rounded-3xl blur-2xl transform group-hover:scale-105 group-hover:bg-[#2F496E]/20 transition-all duration-500 -z-10"></div>
             
             <img
