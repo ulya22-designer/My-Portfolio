@@ -90,7 +90,7 @@ export default function Statistics() {
                 "
               />
 
-              {/* Icon Container - Bentuk squircle miring yang melurus saat di-hover */}
+              {/* Icon Container */}
               <div className="relative flex justify-center z-10">
                 <div
                   className="
@@ -183,7 +183,7 @@ export default function Statistics() {
         `}
       </style>
 
-      {/* Bottom Wave - Sama persis dengan kode asli */}
+      {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none translate-y-full z-20">
         <svg
           viewBox="0 0 1440 140"
