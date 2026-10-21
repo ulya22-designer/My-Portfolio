@@ -88,7 +88,6 @@ export default function Navbar() {
                 />
               </button>
 
-              {/* Dropdown Box Modern */}
               <div
                 className="
                   absolute
@@ -114,7 +113,6 @@ export default function Navbar() {
                   group-hover/dropdown:translate-y-0
                 "
               >
-                {/* Segitiga panah ke atas (Pointer) */}
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rotate-45 border-t border-l border-[#2F496E]/10 rounded-sm"></div>
 
                 <div className="relative z-10 flex flex-col">
@@ -181,8 +179,7 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-6 py-4 gap-4 font-medium text-gray-600">
-          
-          {/* Home Direct ke Hero */}
+        
           <a 
             href="#hero" 
             onClick={() => setIsMobileMenuOpen(false)} 
