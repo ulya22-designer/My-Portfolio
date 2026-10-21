@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 
 // --- PLACEHOLDER IMAGES ---
-// Pastikan path image diganti dengan asset asli kamu
 const imgKementan = "https://placehold.co/100x100/2F496E/white?text=Kementan"; 
 const imgTVRI = "https://placehold.co/100x100/2F496E/white?text=TVRI";
 const imgAsia = "https://placehold.co/100x100/2F496E/white?text=Asia";
@@ -81,16 +80,13 @@ export default function Experience() {
                 hover:shadow-[0_20px_50px_-15px_rgba(47,73,110,0.15)]
               "
             >
-              {/* Top Accent Stripe: Gradient Biru Halus (Lebih Tipis & Elegant) */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2F496E] to-[#7998C1] opacity-60" />
 
               <div className="p-6 md:p-8">
-                {/* Subtle Background Glow on Hover */}
                 <div className="absolute top-0 right-0 w-48 h-48 bg-[#2F496E]/5 rounded-full blur-[60px] -mr-10 -mt-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="flex flex-col md:flex-row gap-6 md:items-center">
                   
-                  {/* Image Container dengan efek hover sedikit zoom */}
                   <div className="flex-shrink-0">
                     <div className="h-20 w-20 md:h-24 md:w-24 rounded-2xl overflow-hidden border border-gray-100 shadow-md bg-white">
                       <img 
